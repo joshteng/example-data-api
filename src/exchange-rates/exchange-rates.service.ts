@@ -14,9 +14,9 @@ export class ExchangeRatesService {
   ]
 
   findOne(exchangeRateQuery: GetExchangeRateDto) {
-    return this.exchangeRates.find(er => {
-      return er['baseCurrency'] == exchangeRateQuery['baseCurrency'] &&
-        er['quoteCurrency'] == exchangeRateQuery['quoteCurrency']
-    })
+    return this.exchangeRates.find(er => (
+      er['baseCurrency'] == exchangeRateQuery['baseCurrency'] &&
+      er['quoteCurrency'] == exchangeRateQuery['quoteCurrency']
+    ))
   }
 }
