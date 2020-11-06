@@ -4,9 +4,9 @@ import { Transform } from "class-transformer";
 export class GetExchangeRateDto {
   @IsString()
   @Transform((baseCurrency) => baseCurrency.toUpperCase())
-  readonly baseCurrency: string;
+  readonly "base-currency": string;
 
   @IsString()
   @Transform((quoteCurrency) => quoteCurrency.toUpperCase())
-  readonly quoteCurrency: string;
+  readonly "quote-currency": string;
 }
