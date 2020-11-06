@@ -1,6 +1,5 @@
 import { HttpService, Injectable, Logger } from '@nestjs/common';
 import { Cron, CronExpression } from '@nestjs/schedule';
-import axios from 'axios';
 import { GetExchangeRateDto } from './dto/get-exchange-rate.dto';
 import { ExchangeRate } from './entities/exchange-rate.entity';
 
